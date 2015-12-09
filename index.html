@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Canvas</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script src="lib.js"></script>
+        <script src="fwheel.js"></script>        
+        <link rel="stylesheet" href="canvas.css">
+        <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"/>
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css"/>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>    
+        <script>
+            $(document).ready(function(){
+                             
+                $(".wh-down").click(function(){ spin(true,12.470,100);});
+                $(".wh-up").click(function(){ spin(false,12.470,100);});
+                $(".wh-stop").click(function(){ stopRotateWheel();});
+                $('.autoplay').slick({
+                    centerMode: true,
+                    centerPadding: '60px',
+                    slidesToShow: 5,
+                    responsive: [
+                      {
+                        breakpoint: 768,
+                        settings: {
+                          arrows: false,
+                          centerMode: true,
+                          centerPadding: '40px',
+                          slidesToShow: 3
+                        }
+                      },
+                      {
+                        breakpoint: 480,
+                        settings: {
+                          arrows: false,
+                          centerMode: true,
+                          centerPadding: '40px',
+                          slidesToShow: 1
+                        }
+                      }
+                    ]
+                  });
+                $('.autoplayds').slick({
+                    slidesToShow: 4,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 2000,
+              });
+                  
+            });
+        </script>
+    </head>
+    <body>
+        <div class="autoplay">
+<!--                                    <div><img data-lazy="imgages/antman.png"/></div>
+                                    <div><img data-lazy="imgages/furious.png"/></div>
+                                    <div><img data-lazy="imgages/hunger.png"/></div>
+                                    <div><img data-lazy="imgages/jurassic.png"/></div>
+                                    <div><img data-lazy="imgages/madmax.png"/></div>
+                                    <div><img data-lazy="imgages/sanandreas.png"/></div>
+                                    <div><img data-lazy="imgages/terminator.png"/></div>                                    -->
+                               </div>
+        <div class="container-fluid">
+                <div class="row">
+                        <div class="col-md-12">
+                                <div class="autoplay">
+                                    <div><img src="images/furious.png" width="300" height="200"/></div>
+                                    <div><img src="images/hunger.jpg" width="300" height="200"/></div>
+                                    <div><img src="images/jurassic.jpg" width="300" height="200"/></div>
+                                    <div><img src="images/madmax.png" width="300" height="200"/></div>
+                                    <div><img src="images/sanandreas.png" width="300" height="200"/></div>
+                                    <div><img src="images/terminator.png" width="300" height="200"/></div>     
+                                    <div><img src="images/spectre.png" width="300" height="200"/></div>
+                                    <div><img src="images/revenant.png" width="300" height="200"/></div>     
+                                    <div><img src="images/mission.jpg" width="300" height="200"/></div>
+                                    <div><img src="images/furious.png" width="300" height="200"/></div>     
+                                    <div><img src="images/antman.jpg" width="300" height="200"/></div>     
+                                </div>
+                        </div>                        
+                </div>
+        </div>
+         <!--<canvas id="canvas" width="700" height="1000"></canvas>-->
+        <div class="my-carousel">
+            <div>your content 1</div>
+            <div>your content 2</div>
+            <div>your content 3</div>
+            <div>your content 4</div>
+            <div>your content 5</div>
+            <div>your content 6</div>
+         </div>
+    </body>
+    
+</html>
