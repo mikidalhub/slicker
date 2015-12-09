@@ -1,0 +1,51 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 11, 2015, 11:26:35 AM
+    Author     : Admin
+*/
+
+body {
+ // background: azure; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, #1a82f7 , #2F2727); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #1a82f7 , #2F2727); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #1a82f7 , #2F2727); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #1a82f7 , #2F2727); /* Standard syntax */
+}
+.control{
+    /*border: 1px solid green;*/
+    float:left;
+    margin-left: -200px;
+}
+.titleh{
+    color:#efe;
+}
+.table-attr{
+    width:50%;
+}
+.popovercontainer{
+    display: none;
+}
+.my-carousel{
+    display: none;
+    width: 80%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+.slider-design{
+    position: absolute;
+}
+
+.slick-prev:before, .slick-next:before{
+    color:red;
+}
+.slickown{
+    padding: 20px;
+    /*width: 900px;*/
+}
